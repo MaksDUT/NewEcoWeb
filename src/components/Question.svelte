@@ -1,6 +1,7 @@
 <script>
   import Card from "./Card.svelte";
   import { onMount,createEventDispatcher } from "svelte";
+  import {score} from './../stores'
 
   import MdPlayCircleOutline from 'svelte-icons/md/MdPlayCircleOutline.svelte'
   import MdReplay from 'svelte-icons/md/MdReplay.svelte'
@@ -91,6 +92,8 @@
     console.log(bol)
     if (!bol) {
       messageShow = messageLose;
+    }else{
+      score.update(score => score+ 1)
     }
     goodAnwser = anwsers.filter(a =>a.isAnwser)[0].response;
     state = States.showAnwser;
@@ -181,7 +184,7 @@
   {#if state == States.finish}
   <button
   class="rounded-md bg-indigo-600 px-3 py-1 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-  on:click={() =>  event("Finish",false)}
+  on:click={() =>  event("Finish")}
   >
   Scénario suivent
 </button>
