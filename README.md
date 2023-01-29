@@ -39,7 +39,7 @@ These instructions will get you a copy of the project up and running on your loc
 ```
 
 
-8. The application should now be running at http://localhost:5000.
+8. The application should now be running at http://localhost:5173.
 
 
 ## License
