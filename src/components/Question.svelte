@@ -24,6 +24,10 @@
   let time = 0;
   let duration;
   let paused = true;
+  let volume=0.5;
+
+  let showControls = false;
+	let showControlsTimeout;
 
   //test with option
   //let anwsers = [{response:'La réponse A',isAnwser: false},{response:'La réponse B',isAnwser: false},{response:'La réponse C',isAnwser: false},{response:'La réponse D',isAnwser: true}]
@@ -45,6 +49,14 @@
   const messageLose = "Mauvaise réponse !"
   let messageShow = messageWin;
   let goodAnwser;
+
+  function handleMove() {
+		// Make the controls visible, but fade out after
+		// 2.5 seconds of inactivity
+		clearTimeout(showControlsTimeout);
+		showControlsTimeout = setTimeout(() => showControls = false, 2500);
+		showControls = true;
+	}
 
 
   function startVideo() {
@@ -121,14 +133,22 @@
     <video
       poster="https://sveltejs.github.io/assets/caminandes-llamigos.jpg"
       {src}
+      
       bind:currentTime={time}
       bind:duration
       bind:paused
+      bind:volume={volume}
     >
       <track kind="captions" />
     </video>
 
-    <div class="videoFiltre" />
+    <div class="videoFiltre" on:mousemove={handleMove} />
+
+    <div class="controls" style="opacity: {duration && showControls ? 1 : 0}"  on:mousemove={handleMove} >
+      <div class="info">
+        <input type="range"  bind:value={volume} max="1" step="0.1">
+      </div>
+    </div>
 
     {#if !isStarted}
       <button class="circle" on:click={startVideo}>
@@ -166,7 +186,7 @@
       </div>
       {#if messageShow === messageLose}
       <div class="md:text-2xl text-xl  big-text ">
-        La bonne réponse été : {goodAnwser}
+        La bonne réponse était : {goodAnwser}
       </div>
       {/if}
 
@@ -343,4 +363,27 @@
       opacity: 1;
     }
   }
+
+
+  .controls {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		transition: opacity 1s;
+	}
+  .info {
+		display: flex;
+		width: 100%;
+		justify-content: flex-end;
+    padding: 10px;
+	}
+
+	span {
+		padding: 0.2em 0.5em;
+		color: white;
+		text-shadow: 0 0 8px black;
+		font-size: 1.4em;
+		opacity: 0.7;
+	}
+
 </style>
