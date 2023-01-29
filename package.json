@@ -17,6 +17,7 @@
     "vite": "^4.0.0"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.8",
     "svelte-icons": "^2.1.0",
     "svelte-spa-router": "^3.3.0"
   }
