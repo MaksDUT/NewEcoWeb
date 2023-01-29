@@ -20,12 +20,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repository:
 ```bash
-   git clone https://github.com/MaksDUT/EcoWeb.git
+   git clone https://github.com/MaksDUT/NewEcoWeb.git
 ```
 
 2. Navigate to the directory:
 ```bash
-   cd EcoWeb/
+   cd NewEcoWeb/
 ```
 
 3. Install the dependencies:
