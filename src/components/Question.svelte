@@ -186,7 +186,7 @@
   class="rounded-md bg-indigo-600 px-3 py-1 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
   on:click={() =>  event("Finish")}
   >
-  Scénario suivent
+  Scénario suivant
 </button>
   {/if}
 
