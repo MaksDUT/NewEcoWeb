@@ -11,3 +11,28 @@
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+
+<script>
+  (function(h,o,u,n,d) {
+    h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+    d=o.createElement(u);d.async=1;d.src=n
+    n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+  })(window,document,'script','https://www.datadoghq-browser-agent.com/datadog-rum-v4.js','DD_RUM')
+  DD_RUM.onReady(function() {
+    DD_RUM.init({
+      clientToken: 'pubc2c4d785cf830298a6e0b81526c55c77',
+      applicationId: '2fae5537-b174-4512-b14a-cdf31cdb9b58',
+      site: 'us5.datadoghq.com',
+      service: 'eco-web',
+      env: 'prod',
+      // Specify a version number to identify the deployed version of your application in Datadog 
+      // version: '1.0.0',
+      sessionSampleRate: 100,
+      premiumSampleRate: 50,
+      trackUserInteractions: true,
+      defaultPrivacyLevel: 'mask-user-input',
+    });
+
+    DD_RUM.startSessionReplayRecording();
+  })
+</script>
