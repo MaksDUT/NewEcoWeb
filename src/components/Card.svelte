@@ -23,7 +23,7 @@
 
 <button bind:this={ref} class="bg-white" on:click={flip}>
   <div class="back">
-    <h1 style="">
+    <h1 class="text-sm md:text-base">
       {card}
     </h1>
   </div>

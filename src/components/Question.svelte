@@ -44,11 +44,15 @@
   let state = States.presentation;
 
 
-  //test 
+  //final anwser screen
   const messageWin = "Bonne réponse !"
   const messageLose = "Mauvaise réponse !"
   let messageShow = messageWin;
   let goodAnwser;
+
+
+  $: show = time > 5;
+  $: show ? pause2second() : "";
 
   function handleMove() {
 		// Make the controls visible, but fade out after
@@ -71,19 +75,6 @@
     isStarted = false;
     paused = true;
   }
-
-  function resetQuestion(){
-    console.log("reset")
-    state = States.presentation;
-    if(presentationVideo!=null){
-        src = presentationVideo;
-        restardVideo();
-    }
-
-  }
-
-  $: show = time > 5;
-  $: show ? pause2second() : "";
 
   function pause2second() {
     paused = true;
@@ -165,7 +156,7 @@
 
   {#if state >= 1 && state<3}
     <div class="flex flex-col justify-between">
-      <h1 class="text-white text-lg text-center">{question}</h1>
+      <h1 class="text-white text-base  md:text-lg text-center">{question}</h1>
       <div class="grid grid-cols-2 gap-4 scale-in-ver-bottom">
         {#each anwsers as card}
           <Card
@@ -223,7 +214,7 @@
   }
 
   .inset-center {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
