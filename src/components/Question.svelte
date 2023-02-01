@@ -236,63 +236,11 @@
     transition: opacity 1s;
   }
 
-  .info {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  span {
-    padding: 0.2em 0.5em;
-    color: white;
-    text-shadow: 0 0 8px black;
-    font-size: 1.4em;
-    opacity: 0.7;
-  }
-
-  .time {
-    width: 3em;
-  }
-
-  .time:last-child {
-    text-align: right;
-  }
-
-  progress {
-    display: block;
-    width: 100%;
-    height: 10px;
-    -webkit-appearance: none;
-    appearance: none;
-  }
-
-  progress::-webkit-progress-bar {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-
-  progress::-webkit-progress-value {
-    background-color: rgba(255, 255, 255, 0.6);
-  }
 
   video {
     width: 100%;
   }
 
-  .team {
-    position: absolute;
-    bottom: 0;
-    height: 30%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-auto-rows: 15%;
-    grid-gap: 2.25rem;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    background-image: linear-gradient(135deg, #8bc5ecab 0%, #9599e2bc 100%);
-    
-  }
 
   .circle {
     left: 50%;
@@ -369,12 +317,5 @@
     padding: 10px;
 	}
 
-	span {
-		padding: 0.2em 0.5em;
-		color: white;
-		text-shadow: 0 0 8px black;
-		font-size: 1.4em;
-		opacity: 0.7;
-	}
 
 </style>
