@@ -11,12 +11,13 @@
 
   // export variable
   export let presentationVideo;
-  export let anwserVideo;
+  export let goodAnwserVideo;
+  export let badAnwserVideo;
   export let question;
   export let anwsers;
   export let title;
 
-
+let anwserVideo;
   //video show 
   let src;
 
@@ -94,9 +95,11 @@
     //animation
     console.log(bol)
     if (!bol) {
+      anwserVideo = badAnwserVideo;
       messageShow = messageLose;
     }else{
       score.update(score => score+ 1)
+      anwserVideo = goodAnwserVideo;
     }
     goodAnwser = anwsers.filter(a =>a.isAnwser)[0].response;
     state = States.showAnwser;
@@ -104,6 +107,7 @@
   }
 
   function startResponse() {
+    if(anwserVideo ===null) return;
     src = anwserVideo;
     state = States.response;
     startVideo();
