@@ -38,7 +38,8 @@
         presentationVideo={selectedScenario.presentationVideo}
         anwsers={selectedScenario.anwsers}
         question={selectedScenario.question}
-        anwserVideo={selectedScenario.anwserVideo}
+        goodAnwserVideo={selectedScenario.goodAnwserVideo}
+        badAnwserVideo={selectedScenario.badAnwserVideo}
         on:Finish={nextScenario}
       />
     {:else}
