@@ -22,28 +22,37 @@ let title = "Premier scénario !"
 const listScenario = [
 {
     anwsers : [
-        {response:'La réponse A',isAnwser: false},
-        {response:'La réponse B',isAnwser: false},
-        {response:'La réponse C',isAnwser: false},
-        {response:'La réponse D',isAnwser: true}
+        {response:'voir son ami',isAnwser: true},
+        {response:'envoyer un email',isAnwser: false},
     ],
     presentationVideo: "/videos/test.mp4",
     goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
     badAnwserVideo: "/videos/bad.mp4",
-    question: "Quel est la réponse à la réponse D ?",
-    title: "Premier scénario !"
+    question: "Quel est le meilleur choix pour Jean, aller voir son ami dans la pièce d'à côté pour lui parler de son projet ou lui envoyer un email?",
+    title: "Les mails"
 },
 {
     anwsers : [
-        {response:'La réponse A',isAnwser: false},
-        {response:'La réponse B',isAnwser: true},
+        {response:'Firefox',isAnwser: true},
+        {response:'Chrome',isAnwser: false},
     ],
     presentationVideo: "/videos/test.mp4",
     goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
     badAnwserVideo: "/videos/bad.mp4",
-    question: "Quel est la réponse à la réponse B ?",
-    title: "Deuxieme scénario !"
-}
+    question: "Quel navigateur Jean devrait-il choisir pour faire ses recherches, Mozilla Firefox ou Google Chrome ?",
+    title: "Choisir son navigateur"
+},
+{
+    anwsers : [
+        {response:'Google',isAnwser: false},
+        {response:'Ecosia',isAnwser: true},
+    ],
+    presentationVideo: "/videos/test.mp4",
+    goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
+    badAnwserVideo: "/videos/bad.mp4",
+    question: "Quel moteur de recherche Jean devrait-il choisir pour effectuer sa recherche, Google ou Ecosia ?",
+    title: "Choisir son moteur de recherche"
+},
 
 ];
 
