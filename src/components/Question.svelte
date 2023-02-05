@@ -52,7 +52,7 @@ let anwserVideo;
   let goodAnwser;
 
 
-  $: show = time > 5;
+  $: show = time +0.15 > duration;
   $: show ? pause2second() : "";
 
   function handleMove() {
@@ -126,6 +126,7 @@ let anwserVideo;
   </div>
   <div class="relative">
     <video
+    class="max-height-80"
       poster="https://sveltejs.github.io/assets/caminandes-llamigos.jpg"
       {src}
       
@@ -133,7 +134,7 @@ let anwserVideo;
       bind:duration
       bind:paused
       bind:volume={volume}
-    >
+    >0.250.25
       <track kind="captions" />
     </video>
 
@@ -210,6 +211,12 @@ let anwserVideo;
 
 
 <style>
+
+  .max-height-80{
+    max-height: 80vh;
+  }
+
+
   .scale-in-ver-bottom {
     -webkit-animation: scale-in-ver-bottom 0.5s
       cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

@@ -25,7 +25,7 @@ const listScenario = [
         {response:'voir son ami',isAnwser: true},
         {response:'envoyer un email',isAnwser: false},
     ],
-    presentationVideo: "/videos/test.mp4",
+    presentationVideo: "/videos/s12_s.mp4",
     goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
     badAnwserVideo: "/videos/bad.mp4",
     question: "Quel est le meilleur choix pour Jean, aller voir son ami dans la pièce d'à côté pour lui parler de son projet ou lui envoyer un email?",
