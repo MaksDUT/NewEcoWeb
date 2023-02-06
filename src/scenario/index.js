@@ -4,7 +4,7 @@
 let anwsers = [{response:'La réponse A',isAnwser: false},{response:'La réponse B',isAnwser: false},{response:'La réponse C',isAnwser: false},{response:'La réponse D',isAnwser: true}]
 let presentationVideo = "/videos/test.mp4";
 let badAnwserVideo = "/videos/test.mp4";
-let goodAnwserVideo = "https://sveltejs.github.io/assets/caminandes-llamigos.mp4";
+let goodAnwserVideo = "/videos/good.mp4";
 let question = "Quel est la réponse à la réponse D ?";
 let title = "Premier scénario !";
 
@@ -26,7 +26,7 @@ const listScenario = [
         {response:'envoyer un email',isAnwser: false},
     ],
     presentationVideo: "/videos/s1_s.mp4",
-    goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
+    goodAnwserVideo: "videos/good.mp4",
     badAnwserVideo: "/videos/bad.mp4",
     question: "Quel est le meilleur choix pour Jean, aller voir son ami dans la pièce d'à côté pour lui parler de son projet ou lui envoyer un email?",
     title: "Les mails"
@@ -38,7 +38,7 @@ const listScenario = [
         {response:'non (pas besoin)',isAnwser: false},
     ],
     presentationVideo: "/videos/s2_s.mp4",
-    goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
+    goodAnwserVideo: "videos/good.mp4",
     badAnwserVideo: "/videos/bad.mp4",
     question: "Jean devrait-il supprimer ses anciens mails ?",
     title: "Les mails v2"
@@ -50,7 +50,7 @@ const listScenario = [
         {response:'Chrome',isAnwser: false},
     ],
     presentationVideo: "/videos/s3_s.mp4",
-    goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
+    goodAnwserVideo: "videos/good.mp4",
     badAnwserVideo: "/videos/bad.mp4",
     question: "Quel navigateur Jean devrait-il choisir pour faire ses recherches, Mozilla Firefox ou Google Chrome ?",
     title: "Choisir son navigateur"
@@ -61,7 +61,7 @@ const listScenario = [
         {response:'Ecosia',isAnwser: true},
     ],
     presentationVideo: "/videos/s4_s.mp4",
-    goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
+    goodAnwserVideo: "videos/good.mp4",
     badAnwserVideo: "/videos/bad.mp4",
     question: "Quel moteur de recherche Jean devrait-il choisir pour effectuer sa recherche, Google ou Ecosia ?",
     title: "Choisir son moteur de recherche"
@@ -73,7 +73,7 @@ const listScenario = [
         {response:'utilise le marque-page',isAnwser: true},
     ],
     presentationVideo: "/videos/s5_s.mp4",
-    goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
+    goodAnwserVideo: "videos/good.mp4",
     badAnwserVideo: "/videos/bad.mp4",
     question: "Quelle est la meilleure façon pour Jean de se rendre sur LinkedIn, en passant par une recherche sur le navigateur ou en utilisant ses favoris ?",
     title: "Site souvent fréquenté"
@@ -85,7 +85,7 @@ const listScenario = [
         {response:'fermer les onglets',isAnwser: true},
     ],
     presentationVideo: "/videos/s6/s.mp4",
-    goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
+    goodAnwserVideo: "videos/good.mp4",
     badAnwserVideo: "/videos/bad.mp4",
     question: "Jean se rend compte qu’il a beaucoup d’onglets ouverts sur son navigateur. Doit-il fermer ceux qu’il n’utilise pas ?",
     title: "Un onglet, deux onglets, trois onglets..."
@@ -97,7 +97,7 @@ const listScenario = [
         {response:'sur le cloud ',isAnwser: false},
     ],
     presentationVideo: "/videos/s7_s.mp4",
-    goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
+    goodAnwserVideo: "videos/good.mp4",
     badAnwserVideo: "/videos/bad.mp4",
     question: "Où devrait-il sauvegarder sa copie de son travail?",
     title: "Les nuages .."
@@ -109,7 +109,7 @@ const listScenario = [
         {response:'télécharger sur son ordinateur',isAnwser: true},
     ],
     presentationVideo: "/videos/s9_s.mp4",
-    goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
+    goodAnwserVideo: "videos/good.mp4",
     badAnwserVideo: "/videos/bad.mp4",
     question: "Comment Jean devrait-il écouter de la musique pendant son travail ?",
     title: "La musique"
@@ -121,7 +121,7 @@ const listScenario = [
         {response:'la plus élevée possible !!',isAnwser: false},
     ],
     presentationVideo: "/videos/s10_s.mp4",
-    goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
+    goodAnwserVideo: "videos/good.mp4",
     badAnwserVideo: "/videos/bad.mp4",
     question: "Jean souhaite maintenant regarder une vidéo mais hésite sur la qualité de cette dernière. Laquelle prendre ?",
     title: "Netflix"
@@ -133,7 +133,7 @@ const listScenario = [
         {response:'team lumière',isAnwser: false},
     ],
     presentationVideo: "/videos/s11_s.mp4",
-    goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
+    goodAnwserVideo: "videos/good.mp4",
     badAnwserVideo: "/videos/bad.mp4",
     question: "JEAN est sur Youtube et se demande s’il devrait changer le theme.  Lequel prendre ?",
     title: "Sombre vs Lumière"
@@ -145,7 +145,7 @@ const listScenario = [
         {response:'mettre en veille',isAnwser: false},
     ],
     presentationVideo: "/videos/s8_s.mp4",
-    goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
+    goodAnwserVideo: "videos/good.mp4",
     badAnwserVideo: "/videos/bad.mp4",
     question: "Jean a sauvegardé son travail et veut rentrer chez lui. Il ne lui reste plus qu’à ranger son ordinateur mais il hésite.",
     title: "Netflix"
@@ -157,7 +157,7 @@ const listScenario = [
         {response:'le recycler !! (tous n\'est pas a jeter',isAnwser: true},
     ],
     presentationVideo: "/videos/s12_s.mp4",
-    goodAnwserVideo: "https://sveltejs.github.io/assets/caminandes-llamigos.mp4",
+    goodAnwserVideo: "videos/good.mp4",
     badAnwserVideo: "/videos/bad.mp4",
     question: "Le portable de Jean est tombé en panne. Doit-il le jeter à la poubelle ?",
     title: "Cycle de vie d'un téléphone"

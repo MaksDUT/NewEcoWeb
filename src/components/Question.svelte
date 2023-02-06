@@ -128,7 +128,7 @@
   <div class="relative">
     <video
     class="max-height-80"
-      poster="https://sveltejs.github.io/assets/caminandes-llamigos.jpg"
+      poster=""
       {src}
       
       bind:playbackRate
