@@ -17,7 +17,8 @@
   export let anwsers;
   export let title;
 
-let anwserVideo;
+  let playbackRate;
+  let anwserVideo;
   //video show 
   let src;
 
@@ -54,7 +55,7 @@ let anwserVideo;
 
   $: show = time +0.15 > duration;
   $: show ? pause2second() : "";
-
+ 
   function handleMove() {
 		// Make the controls visible, but fade out after
 		// 2.5 seconds of inactivity
@@ -68,6 +69,7 @@ let anwserVideo;
     
     paused = !paused;
     isStarted = true;
+    playbackRate = 4;
   }
 
   function restardVideo() {
@@ -93,7 +95,7 @@ let anwserVideo;
   //handel anwser
   function anwser(bol) {
     //animation
-    console.log(bol)
+    //console.log(bol)
     if (!bol) {
       anwserVideo = badAnwserVideo;
       messageShow = messageLose;
@@ -103,7 +105,6 @@ let anwserVideo;
     }
     goodAnwser = anwsers.filter(a =>a.isAnwser)[0].response;
     state = States.showAnwser;
-
   }
 
   function startResponse() {
@@ -130,10 +131,12 @@ let anwserVideo;
       poster="https://sveltejs.github.io/assets/caminandes-llamigos.jpg"
       {src}
       
+      bind:playbackRate
       bind:currentTime={time}
       bind:duration
       bind:paused
       bind:volume={volume}
+      
     >0.250.25
       <track kind="captions" />
     </video>
