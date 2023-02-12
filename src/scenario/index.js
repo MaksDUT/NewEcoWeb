@@ -124,7 +124,7 @@ const listScenario = [
     goodAnwserVideo: "/videos/s10_b.mp4",
     badAnwserVideo: "/videos/s10_m.mp4",
     question: "Jean souhaite maintenant regarder une vidéo mais hésite sur la qualité de cette dernière. Laquelle prendre ?",
-    title: "Netflix"
+    title: "Regarder des vidéos en ligne"
 },
 
 {
@@ -148,7 +148,7 @@ const listScenario = [
     goodAnwserVideo: "/videos/s8_b.mp4",
     badAnwserVideo: "/videos/s8_m.mp4",
     question: "Jean a sauvegardé son travail et veut rentrer chez lui. Il ne lui reste plus qu’à ranger son ordinateur mais il hésite.",
-    title: "Regarder des vidéos en ligne"
+    title: "Mettre en veille ou éteindre son ordinateur"
 },
 
 {
