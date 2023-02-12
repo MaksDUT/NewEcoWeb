@@ -1,10 +1,12 @@
 <script>
   import Card from "./Card.svelte";
   import { onMount,createEventDispatcher } from "svelte";
-  import {score} from './../stores'
+  import {score,total} from './../stores'
 
   import MdPlayCircleOutline from 'svelte-icons/md/MdPlayCircleOutline.svelte'
   import MdReplay from 'svelte-icons/md/MdReplay.svelte'
+
+
 
   const event = createEventDispatcher();
 
@@ -16,9 +18,15 @@
   export let question;
   export let anwsers;
   export let title;
+  export let number;
+
+  let totals;
 
   let playbackRate;
   let anwserVideo;
+
+  let buttonNextScene= "Scène suivante";
+
   //video show 
   let src;
 
@@ -94,8 +102,6 @@
 
   //handel anwser
   function anwser(bol) {
-    //animation
-    //console.log(bol)
     if (!bol) {
       anwserVideo = badAnwserVideo;
       messageShow = messageLose;
@@ -119,11 +125,17 @@
       src = presentationVideo;
     }
   });
+
+
+  total.subscribe(value => {
+		totals = value;
+	});
+
 </script>
 
 <div class=" flex flex-col">
   <div class="text-center text-3xl font-bold text-white text">
-    {title}
+    [{number}/{totals}] {title}
   </div>
   <div class="relative">
     <video
@@ -205,7 +217,12 @@
   class="rounded-md bg-indigo-600 px-3 py-1 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
   on:click={() =>  event("Finish")}
   >
-  Scénario suivant
+  {#if totals===number}
+  Terminer et voir le résultat
+  {:else}
+  Scène suivante
+  {/if}
+  
 </button>
   {/if}
 
@@ -256,57 +273,6 @@
     justify-content: space-between;
   }
 
-  span {
-    padding: 0.2em 0.5em;
-    color: white;
-    text-shadow: 0 0 8px black;
-    font-size: 1.4em;
-    opacity: 0.7;
-  }
-
-  .time {
-    width: 3em;
-  }
-
-  .time:last-child {
-    text-align: right;
-  }
-
-  progress {
-    display: block;
-    width: 100%;
-    height: 10px;
-    -webkit-appearance: none;
-    appearance: none;
-  }
-
-  progress::-webkit-progress-bar {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-
-  progress::-webkit-progress-value {
-    background-color: rgba(255, 255, 255, 0.6);
-  }
-
-  video {
-    width: 100%;
-  }
-
-  .team {
-    position: absolute;
-    bottom: 0;
-    height: 30%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-auto-rows: 15%;
-    grid-gap: 2.25rem;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    background-image: linear-gradient(135deg, #8bc5ecab 0%, #9599e2bc 100%);
-    
-  }
 
   .circle {
     left: 50%;

@@ -29,7 +29,7 @@ const listScenario = [
     goodAnwserVideo: "/videos/s1_b.mp4",
     badAnwserVideo: "/videos/s1_m.mp4",
     question: "Quel est le meilleur choix pour Jean, aller voir son ami dans la pièce d'à côté pour lui parler de son projet ou lui envoyer un email?",
-    title: "Les mails"
+    title: "L'envoi de mails"
 },
 
 {
@@ -41,7 +41,7 @@ const listScenario = [
     goodAnwserVideo: "/videos/s2_b.mp4",
     badAnwserVideo: "/videos/s2_m.mp4",
     question: "Jean devrait-il supprimer ses anciens mails ?",
-    title: "Les mails v2"
+    title: "Le stockage des mails"
 },
 
 {
@@ -100,7 +100,7 @@ const listScenario = [
     goodAnwserVideo: "/videos/s7_b.mp4",
     badAnwserVideo: "/videos/s7_m.mp4",
     question: "Où devrait-il sauvegarder sa copie de son travail?",
-    title: "Les nuages .."
+    title: "Le stockage dans le cloud"
 },
 
 {
@@ -111,7 +111,7 @@ const listScenario = [
     presentationVideo: "/videos/s9_s.mp4",
     goodAnwserVideo: "/videos/s9_b.mp4",
     badAnwserVideo: "/videos/s9_m.mp4",
-    question: "Comment Jean devrait-il écouter de la musique pendant son travail ?",
+    question: "Maintenant que Jean a terminé de travailler, il souhaite écouter de la musique. Comment devrait-il s'y prendre ?",
     title: "La musique"
 },
 
