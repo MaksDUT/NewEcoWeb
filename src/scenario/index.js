@@ -135,8 +135,8 @@ const listScenario = [
     presentationVideo: "/videos/s11_s.mp4",
     goodAnwserVideo: "/videos/s11_b.mp4",
     badAnwserVideo: "/videos/s11_m.mp4",
-    question: "JEAN est sur Youtube et se demande s’il devrait changer le theme.  Lequel prendre ?",
-    title: "Sombre vs Lumière"
+    question: "La nuit tombe, Jean et sur YouTube et se demande s’il devrait changer le theme.  Lequel prendre ?",
+    title: "Le côté obscur"
 },
 
 {
@@ -148,19 +148,19 @@ const listScenario = [
     goodAnwserVideo: "/videos/s8_b.mp4",
     badAnwserVideo: "/videos/s8_m.mp4",
     question: "Jean a sauvegardé son travail et veut rentrer chez lui. Il ne lui reste plus qu’à ranger son ordinateur mais il hésite.",
-    title: "Netflix"
+    title: "Regarder des vidéos en ligne"
 },
 
 {
     anwsers : [
-        {response:'le jeter et rejoindre Apple',isAnwser: false},
-        {response:'le recycler !! (tous n\'est pas a jeter',isAnwser: true},
+        {response:'Oui, il n\'en a plus besoin',isAnwser: false},
+        {response:'Non, il y a peut-être mieux à faire',isAnwser: true},
     ],
     presentationVideo: "/videos/s12_s.mp4",
     goodAnwserVideo: "/videos/s12_b.mp4",
     badAnwserVideo: "/videos/s12_m.mp4",
     question: "Le portable de Jean est tombé en panne. Doit-il le jeter à la poubelle ?",
-    title: "Cycle de vie d'un téléphone"
+    title: "Cycle de vie d'un smartphone"
 },
 
 
