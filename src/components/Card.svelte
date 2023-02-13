@@ -21,7 +21,7 @@
   }
 </script>
 
-<button bind:this={ref} class="bg-white" on:click={flip}>
+<button bind:this={ref} class="bg-white" on:click|once={flip}>
   <div class="back">
     <h1 class="text-sm md:text-base">
       {card}

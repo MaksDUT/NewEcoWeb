@@ -34,11 +34,13 @@
   <div class="flex w-full min-h-screen justify-center">
     {#if !loadNewScenario}
       <Question
+        number={index+1}
         title={selectedScenario.title}
         presentationVideo={selectedScenario.presentationVideo}
         anwsers={selectedScenario.anwsers}
         question={selectedScenario.question}
-        anwserVideo={selectedScenario.anwserVideo}
+        goodAnwserVideo={selectedScenario.goodAnwserVideo}
+        badAnwserVideo={selectedScenario.badAnwserVideo}
         on:Finish={nextScenario}
       />
     {:else}
