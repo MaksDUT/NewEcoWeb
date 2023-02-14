@@ -22,8 +22,8 @@ let title = "Premier scénario !";
 const listScenario = [
 {
     anwsers : [
-        {response:'voir son ami',isAnwser: true},
-        {response:'envoyer un email',isAnwser: false},
+        {response:'Voir son ami',isAnwser: true},
+        {response:'Envoyer un email',isAnwser: false},
     ],
     presentationVideo: "/videos/s1_s.mp4",
     goodAnwserVideo: "/videos/s1_b.mp4",
@@ -34,8 +34,8 @@ const listScenario = [
 
 {
     anwsers : [
-        {response:'oui ',isAnwser: true},
-        {response:'non (pas besoin)',isAnwser: false},
+        {response:'Oui ',isAnwser: true},
+        {response:'Non (pas besoin)',isAnwser: false},
     ],
     presentationVideo: "/videos/s2_s.mp4",
     goodAnwserVideo: "/videos/s2_b.mp4",
@@ -69,8 +69,8 @@ const listScenario = [
 
 {
     anwsers : [
-        {response:'recherche en utilisant son moteur de recherche préféré',isAnwser: false},
-        {response:'utilise le marque-page',isAnwser: true},
+        {response:'Recherche en utilisant son moteur de recherche préféré',isAnwser: false},
+        {response:'Utilise le marque-page',isAnwser: true},
     ],
     presentationVideo: "/videos/s5_s.mp4",
     goodAnwserVideo: "/videos/s5_b.mp4",
@@ -81,8 +81,8 @@ const listScenario = [
 
 {
     anwsers : [
-        {response:'pas besoin !! (1 onglet ou 50 ne change rien)',isAnwser: false},
-        {response:'fermer les onglets',isAnwser: true},
+        {response:'Pas besoin !! (1 onglet ou 50 ne change rien)',isAnwser: false},
+        {response:'Fermer les onglets',isAnwser: true},
     ],
     presentationVideo: "/videos/s6_s.mp4",
     goodAnwserVideo: "videos/s6_b.mp4",
@@ -93,8 +93,8 @@ const listScenario = [
 
 {
     anwsers : [
-        {response:'clé USB',isAnwser: true},
-        {response:'sur le cloud ',isAnwser: false},
+        {response:'Clé USB',isAnwser: true},
+        {response:'Sur le cloud ',isAnwser: false},
     ],
     presentationVideo: "/videos/s7_s.mp4",
     goodAnwserVideo: "/videos/s7_b.mp4",
@@ -105,8 +105,8 @@ const listScenario = [
 
 {
     anwsers : [
-        {response:'youtube',isAnwser: false},
-        {response:'télécharger sur son ordinateur',isAnwser: true},
+        {response:'Youtube',isAnwser: false},
+        {response:'Télécharger sur son ordinateur',isAnwser: true},
     ],
     presentationVideo: "/videos/s9_s.mp4",
     goodAnwserVideo: "/videos/s9_b.mp4",
@@ -117,8 +117,8 @@ const listScenario = [
 
 {
     anwsers : [
-        {response:'faible',isAnwser: true},
-        {response:'la plus élevée possible !!',isAnwser: false},
+        {response:'Faible',isAnwser: true},
+        {response:'La plus élevée possible !!',isAnwser: false},
     ],
     presentationVideo: "/videos/s10_s.mp4",
     goodAnwserVideo: "/videos/s10_b.mp4",
@@ -129,20 +129,20 @@ const listScenario = [
 
 {
     anwsers : [
-        {response:'team sombre',isAnwser: true},
-        {response:'team lumière',isAnwser: false},
+        {response:'Team sombre',isAnwser: true},
+        {response:'Team lumière',isAnwser: false},
     ],
     presentationVideo: "/videos/s11_s.mp4",
     goodAnwserVideo: "/videos/s11_b.mp4",
     badAnwserVideo: "/videos/s11_m.mp4",
-    question: "La nuit tombe, Jean et sur YouTube et se demande s’il devrait changer le theme.  Lequel prendre ?",
+    question: "La nuit tombe, Jean est sur YouTube et se demande s’il devrait changer le theme.  Lequel prendre ?",
     title: "Le côté obscur"
 },
 
 {
     anwsers : [
-        {response:'éteindre son ordinateur',isAnwser: true},
-        {response:'mettre en veille',isAnwser: false},
+        {response:'Éteindre son ordinateur',isAnwser: true},
+        {response:'Mettre en veille',isAnwser: false},
     ],
     presentationVideo: "/videos/s8_s.mp4",
     goodAnwserVideo: "/videos/s8_b.mp4",
