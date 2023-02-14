@@ -34,15 +34,21 @@
         <div class="relative px-6 lg:px-8">
           <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-          
+              <a  href="https://github.com/MaksDUT/NewEcoWeb" class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
+                Github
+              </a>  
+
+
             </div>
             <div class="text-center">
+              
               <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Merci d'avoir participé</h1>
               <p class="mt-6 text-lg leading-8 text-gray-200">Votre score est de {scoreFinal}/{totals}</p>
               <div class="mt-10 flex items-center justify-center gap-x-6">
                 <a href="/" use:link class="rounded-md bg-slate-600 px-3 py-1 text-base font-semibold leading-7 text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Menu Principal</a>
                 <a href="/sources" use:link class="rounded-md bg-slate-600 px-3 py-1 text-base font-semibold leading-7 text-white shadow-sm hover:bg-slate-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sources</a>
               </div>
+              
             </div>
           </div>
         </div>

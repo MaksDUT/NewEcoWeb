@@ -77,7 +77,7 @@
     
     paused = !paused;
     isStarted = true;
-    playbackRate = 2;
+    playbackRate = 1;
   }
 
   function restardVideo() {
